@@ -1,0 +1,21 @@
+{% extends 'estiamflix/base.html' %}
+<head>
+
+</head>
+<body>
+{% block content %}
+EstiamFlix
+<hr>Bienvenue dans le site estiamflix ! Inscrivez vous pour beneficier de nous séries gratuitement!</hr>
+
+{% for Serie in series %}
+   <h1> {{ Serie.titre }}</h1><br>
+    <h1>{{ Serie.description }}</h1><br>
+   <h1> {{ Serie.realisateur }}</h1><br>
+    <h1>{{ Serie.anneesortie }}</h1><br>
+    <h1>{{ Serie.nbreepisode }}</h1><br>
+{% endfor %}
+
+
+
+{% endblock %}
+</body>
